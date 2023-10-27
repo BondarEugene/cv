@@ -162,7 +162,7 @@ body {
 .greetings__subtitle {
   font-weight: 600;
   font-size: 25px;
-  padding: 0 10px;
+  padding: 10px;
   line-height: 25px;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 10px;
@@ -369,7 +369,7 @@ body {
 }
 
 .addition {
-  margin: 10px;
+  margin: 20px 10px;
 }
 .addition__item {
   display: flex;

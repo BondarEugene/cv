@@ -98,7 +98,7 @@ body {
     font-weight: 600;
     font-size: 25px;
     //text-shadow: 1px 0 0 black;
-    padding: 0 10px;
+    padding: 10px;
     line-height: 25px;
     background-color: rgba($color: #ffffff, $alpha: 0.6);
     border-radius: 10px;
@@ -369,7 +369,7 @@ body {
 
 .addition {
   // .addition__item
-  margin: 10px;
+  margin: 20px 10px;
   &__item {
     display: flex;
     justify-content: space-between;
@@ -392,6 +392,8 @@ body {
     position: relative;
     z-index: 2;
     background-color: rgba($color: #adabab, $alpha: 0.9);
+    //background-color: rgba($color: #000000, $alpha: 0.9);
+    //color: #ffffff;
     &:after {
       content: "";
       display: block;
