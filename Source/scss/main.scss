@@ -1,13 +1,13 @@
 // !Шрифты
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,700&family=Outfit:wght@400;600;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,700&family=Outfit:wght@400;600;800&display=swap');
 // !Обнуление
-@import "./nullstyle";
+@import './nullstyle';
 // !container
-@import "./container";
+@import './container';
 
 /*тело сайта*/
 body {
-  font-family: "Outfit", sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 //прибиваем footer к низу страницы, запрещаем контенту заходить за пределы экрана
 .wrapper {
@@ -18,7 +18,7 @@ body {
 }
 .content {
   flex: 1 1 auto;
-  background: url("../img/images/main/bg_3.webp") 0 0 / cover fixed;
+  background: url('../img/images/main/bg_3.webp') 0 0 / cover fixed;
 }
 /*-------greetings--------------*/
 .greetings {
@@ -56,7 +56,7 @@ body {
     position: relative;
     right: 95px;
     top: 10px;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
     font-size: 20px;
   }
@@ -192,21 +192,23 @@ body {
   }
 
   &__row {
-    margin: 0 10px;
     flex: 0 1 33.333%;
-    margin: 20px 0 0 0;
+    margin: 20px 0;
+
+    &:last-child {
+      flex: 0 1 100%;
+      max-width: 34%;
+      margin: 0 auto;
+    }
 
     @media (max-width: 768px) {
       & {
-        flex: 0 1 50%;
+        flex: 0 1 100%;
+        margin: 0 0 10px 0;
+        max-width: 100%;
       }
       &:last-child {
-        flex: 0 1 100%;
-      }
-    }
-    @media (max-width: 320px) {
-      & {
-        margin: 10px 0 0 0;
+        max-width: 100%;
       }
     }
   }
@@ -278,6 +280,7 @@ body {
 
   &__title {
     margin: 0 0 20px 0;
+    font-family: 'Josefin Sans', sans-serif;
     @media (max-width: 425px) {
       & {
         margin: 0 0 10px 0;
@@ -333,7 +336,7 @@ body {
 
   .swiper-button-prev::after,
   .swiper-button-next::after {
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     opacity: 0.7;
     font-size: 60px;
@@ -351,7 +354,7 @@ body {
   .swiper-pagination-bullet {
     width: 15px;
     height: 15px;
-    background-color: rgba($color: #000000, $alpha: 0.7);
+    background-color: rgba($color: #ffffff, $alpha: 0.7);
     @media (max-width: 425px) {
       & {
         width: 10px;
@@ -395,7 +398,7 @@ body {
     //background-color: rgba($color: #000000, $alpha: 0.9);
     //color: #ffffff;
     &:after {
-      content: "";
+      content: '';
       display: block;
       height: 2px;
       background: rgba($color: #000000, $alpha: 0.7);
