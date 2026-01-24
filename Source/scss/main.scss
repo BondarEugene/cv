@@ -18,7 +18,7 @@ body {
 }
 .content {
   flex: 1 1 auto;
-  background: url('../img/images/main/bg_3.webp') 0 0 / cover fixed;
+  background: url('/portfolio/img/images/main/bg_5.webp') 0 0 / cover fixed;
 }
 /*-------greetings--------------*/
 .greetings {
@@ -37,33 +37,24 @@ body {
   }
 
   &__image img {
-    width: 100%;
-    height: 100%;
-    border-radius: 100px;
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
   }
+
   &__image {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 30px 0 5px 0;
     @media (max-width: 768px) {
       & {
         margin: 0px auto;
       }
     }
-  }
-  &__mark {
-    position: relative;
-    right: 95px;
-    top: 10px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-  }
-
-  &__title-mark {
-    position: absolute;
-    z-index: 2;
   }
 
   &__body {
@@ -133,7 +124,7 @@ body {
     border-radius: 5px;
     margin: 10px;
     text-transform: uppercase;
-    background: rgba($color: #9e9e9e, $alpha: 0.5);
+    background: rgba($color: #ffffff, $alpha: 0.6);
     min-height: 50px;
     display: flex;
     justify-content: center;
@@ -195,11 +186,11 @@ body {
     flex: 0 1 33.333%;
     margin: 20px 0;
 
-    &:last-child {
-      flex: 0 1 100%;
-      max-width: 34%;
-      margin: 0 auto;
-    }
+    // &:last-child {
+    //   flex: 0 1 100%;
+    //   max-width: 34%;
+    //   margin: 0 auto;
+    // }
 
     @media (max-width: 768px) {
       & {
@@ -207,9 +198,9 @@ body {
         margin: 0 0 10px 0;
         max-width: 100%;
       }
-      &:last-child {
-        max-width: 100%;
-      }
+      // &:last-child {
+      //   max-width: 100%;
+      // }
     }
   }
 
@@ -394,7 +385,7 @@ body {
   &__body {
     position: relative;
     z-index: 2;
-    background-color: rgba($color: #adabab, $alpha: 0.9);
+    background-color: rgba($color: #ffffff, $alpha: 0.6);
     //background-color: rgba($color: #000000, $alpha: 0.9);
     //color: #ffffff;
     &:after {
@@ -448,7 +439,7 @@ body {
       text-decoration: underline;
       color: #000000;
       &:hover {
-        color: #ffffff;
+        color: #000000;
         text-decoration: none;
       }
     }
@@ -490,7 +481,7 @@ body {
   // .footer__links
 
   &__links {
-    background-color: #ededed;
+    background-color: #ffe3e3;
     position: relative;
     z-index: 2;
   }
