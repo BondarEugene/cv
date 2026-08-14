@@ -92,7 +92,7 @@ body {
 
 .content {
   flex: 1 1 auto;
-  background: url("/img/images/main/main_BG.webp") 0 0/cover fixed;
+  background: url("./img/images/main/main_BG.webp") 0 0/cover fixed;
 }
 
 /*-------greetings--------------*/
