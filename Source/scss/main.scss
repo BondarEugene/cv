@@ -18,7 +18,7 @@ body {
 }
 .content {
   flex: 1 1 auto;
-  background: url('/img/images/main/main_BG.webp') 0 0 / cover fixed;
+  background: url('../img/images/main/main_BG.webp') 0 0 / cover fixed;
 }
 /*-------greetings--------------*/
 .greetings {
@@ -231,8 +231,18 @@ body {
 .swiper-pagination {
 }
 .swiper-button-prev {
+  --swiper-navigation-size: 60px;
+  --swiper-navigation-top-offset: 50%;
+  --swiper-navigation-sides-offset: 120px;
+  --swiper-navigation-color: black;
+  font-weight: bold;
 }
 .swiper-button-next {
+  --swiper-navigation-size: 60px;
+  --swiper-navigation-top-offset: 50%;
+  --swiper-navigation-sides-offset: 120px;
+  --swiper-navigation-color: black;
+  font-weight: bold;
 }
 .swiper-scrollbar {
 }
@@ -256,7 +266,7 @@ body {
   }
 
   &__title {
-    margin: 0 0 20px 0;
+    margin: 20px 0;
     font-family: 'Josefin Sans', sans-serif;
     @media (max-width: 425px) {
       & {
@@ -313,9 +323,8 @@ body {
 
   .swiper-button-prev::after,
   .swiper-button-next::after {
-    color: rgb(255, 255, 255);
+    // color: rgb(255, 255, 255);
     font-weight: bold;
-    opacity: 0.7;
     font-size: 60px;
 
     @media (max-width: 425px) {
@@ -331,7 +340,7 @@ body {
   .swiper-pagination-bullet {
     width: 15px;
     height: 15px;
-    background-color: rgba($color: #ffffff, $alpha: 0.7);
+    background-color: rgba($color: #2f00ff, $alpha: 0.7);
     @media (max-width: 425px) {
       & {
         width: 10px;
