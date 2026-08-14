@@ -247,11 +247,6 @@ body {
   flex: 0 1 33.333%;
   margin: 20px 0;
 }
-.about__row:last-child {
-  flex: 0 1 100%;
-  max-width: 34%;
-  margin: 0 auto;
-}
 @media (max-width: 768px) {
   .about__row {
     flex: 0 1 100%;
