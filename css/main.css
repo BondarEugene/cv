@@ -512,21 +512,49 @@ body {
 
 /*------------------------------Education------------------*/
 .education__title {
-  font-size: 50px;
+  font-size: 40px;
+  font-weight: bold;
   text-align: center;
   margin: 0 0 10px 0;
 }
 .education__body {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .education__row {
-  max-width: 300px;
+  max-width: 20%;
   display: flex;
   flex-direction: column;
+  text-align: center;
   margin: 0 10px 10px;
 }
+.education__row:first-child .icon-ed a {
+  cursor: default;
+}
+.education__row:not(:first-child) .icon-ed a {
+  display: inline-block;
+  transition: transform 0.5s ease;
+}
+.education__row:not(:first-child) .icon-ed a:hover {
+  transform: translateY(-4px) scale(1.02);
+}
+.education__subtitle {
+  font-size: 20px;
+  padding: 5px 0;
+}
+.education__subtitle:nth-child(2) {
+  text-decoration: underline;
+}
+.education__icon {
+  margin: 5px 0 0 0;
+}
+
+.icon-ed__item {
+  width: 50px;
+  height: 50px;
+}
+
 /*------------------------------Footer--------------------------------------------*/
 .footer__links {
   background-color: #ededed;
