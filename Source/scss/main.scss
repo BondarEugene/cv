@@ -271,7 +271,7 @@ body {
     @media (max-width: 768px) {
       & {
         font-size: 30px;
-        margin: 20px 0 10px;
+        margin: 10px 0 0 0;
       }
     }
 
@@ -319,6 +319,7 @@ body {
       & {
         min-height: 200px;
         max-width: 50%;
+        margin: 10px auto 20px;
       }
     }
 
@@ -395,7 +396,7 @@ body {
 
     @media (max-width: 650px) {
       & {
-        font-size: 15px;
+        font-size: 18px;
       }
     }
 
@@ -529,32 +530,78 @@ body {
     font-size: 40px;
     font-weight: bold;
     text-align: center;
-    margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
+
+    @media (max-width: 768px) {
+      & {
+        font-size: 30px;
+        margin: 0 0 10px 0;
+      }
+    }
+
+    @media (max-width: 650px) {
+      & {
+        font-size: 25px;
+      }
+    }
+
+    @media (max-width: 376px) {
+      & {
+        font-size: 20px;
+      }
+    }
   }
 
   // .education__body
   &__body {
-    // padding: 0 10px 10px;
     display: flex;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+
+    @media (max-width: 880px) {
+      & {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 425px) {
+      & {
+        justify-content: space-around;
+      }
+    }
+
+    & p {
+      font-size: 20px;
+      @media (max-width: 650px) {
+        & {
+          font-size: 18px;
+        }
+      }
+
+      @media (max-width: 425px) {
+        & {
+          font-size: 12px;
+        }
+      }
+    }
   }
 
   // .education__row
 
   &__row {
-    max-width: 20%;
+    min-height: 200px;
+    max-width: 200px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    // justify-content: space-between;
-    // justify-content: center;
-    margin: 0 10px 10px;
+    justify-content: space-between;
+    margin: 0 10px 20px;
 
     &:first-child {
       .icon-ed a {
         cursor: default;
+        pointer-events: none;
       }
     }
     &:not(:first-child) {
@@ -567,22 +614,39 @@ body {
         }
       }
     }
+    @media (max-width: 880px) {
+      & {
+        min-height: 150px;
+        max-width: 40%;
+      }
+      &:nth-child(-n + 2) {
+        margin: 0 10px 25px;
+      }
+    }
+
+    @media (max-width: 425px) {
+      & {
+        min-height: 70px;
+      }
+      &:nth-child(-n + 2) {
+        margin: 0 10px 15px;
+      }
+    }
   }
 
   // .education__subtitle
 
   &__subtitle {
-    font-size: 20px;
-    padding: 5px 0;
     &:nth-child(2) {
       text-decoration: underline;
+      padding: 5px 0;
     }
   }
 
   // .education__icon
 
   &__icon {
-    margin: 5px 0 0 0;
+    // margin: 5px 0 0 0;
   }
 }
 
@@ -591,6 +655,18 @@ body {
   &__item {
     width: 50px;
     height: 50px;
+    @media (max-width: 880px) {
+      & {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    @media (max-width: 425px) {
+      & {
+        width: 30px;
+        height: 30px;
+      }
+    }
   }
 }
 
@@ -600,7 +676,8 @@ body {
   // .footer__links
 
   &__links {
-    background-color: #ededed;
+    // background-color: #ededed;
+    // margin: 5px 0 0 0;
     position: relative;
     z-index: 2;
   }
@@ -611,6 +688,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 0 5px 0;
   }
 
   // .footer__item
@@ -632,9 +710,16 @@ body {
   }
 
   &__item img {
+    max-width: 40px;
+    @media (max-width: 768px) {
+      & {
+        max-width: 40px;
+      }
+    }
+
     @media (max-width: 425px) {
       & {
-        max-width: 35px;
+        max-width: 30px;
       }
     }
   }
